@@ -1,0 +1,11 @@
+version: 0.2
+
+phases:
+  install:
+    runtime-versions:
+      python: 3.9
+    commands:
+      - pip install yfinance boto3 pandas
+  build:
+    commands:
+      - python download.py
